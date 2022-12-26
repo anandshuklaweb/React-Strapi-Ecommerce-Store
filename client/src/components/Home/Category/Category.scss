@@ -1,0 +1,35 @@
+@import "../../../css-config/mixins.scss";
+.shop-by-category {
+  margin: 25px 0;
+  @include md {
+    margin: 50px 0;
+  }
+  .categories {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    padding-left: 10px;
+    .category {
+      background-color: teal;
+      width: calc(50% - 5px);
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 5px;
+      @include md {
+        width: calc(33.33% - 10px);
+      }
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .cat-title {
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-weight: 400;
+      }
+    }
+  }
+}
